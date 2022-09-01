@@ -10,7 +10,12 @@ import { RouterModule } from '@angular/router';
     CustomersComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild([
+      {
+        path: "", component: CustomersComponent
+      }
+    ])
   ]
 })
 export class CustomersModule { }
